@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Food Delight<ion-icon name="fast-food" class="food-icon"></ion-icon></h2>
+        </div>
+        <div class="box">
+            <div class="cart-count">0</div>
+            <ion-icon name="cart" class="cart-icon" ></ion-icon>
+        </div>
+        <div class="cart">
+            <div class="cart-title">Cart-Items</div>
+            
+             <div class="cart-content">
+                
+            </div>
+              <div class="total">
+                <div class="total-title">Total</div>
+               <div class="total-price">Rs.0</div>
+             </div>
+              <button class="btn-buy">Place-Order</button>
+              <ion-icon name="close" id="cart-close"></ion-icon>
+ 
+        
+    </div>
+    </header>
+    <div class="container">
+        <div class="top">
+          <div class="buttons">
+            <button data-filter="all" class="btn clicked">All</button>
+            <button data-filter="icecream" class="btn">Ice-Creams</button>
+            <button data-filter="cake" class="btn">Cakes</button>
+            <button data-filter="pizza" class="btn">Pizza</button>
+         </div>
+         <div class="search-box">
+           <input type="search" id="search-box" placeholder="Search Food...">
+         </div>
+       </div>
+        <div class="shop-content">
+        <!--1-->
+            <div class="food-box" data-item="pizza"> 
+                  <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_FtByAZZPy" alt="Pizza-01" class="food-img" id="food-img"></div>
+                    <h2 class="food-title">Pizza</h2>
+                    <span class="food-price">Rs.110</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+          <!--2-->
+            <div class="food-box" data-item="icecream">
+                   <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_4z6XoXcBO" alt="ice-01" class="food-img" id="food-img">
+                  </div>
+                    <h2 class="food-title">Ice</h2>
+                    <span class="food-price">Rs.145</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+
+            </div>
+          <!--3-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_dsevNz-mO" alt="cake-01" class="food-img" id="food-img">
+                </div>
+    
+                    <h2 class="food-title">Cake</h2>
+                    <span class="food-price">Rs.190</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+        
+            </div>
+         <!--4-->
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_aJ-el89I9" alt="cake-01" class="food-img" id="food-img">
+                </div>
+            
+                    <h2 class="food-title">Cup-Ice</h2>
+                    <span class="food-price">Rs.165</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+           <!--5-->
+            
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_-qDbui61Rr" alt="cake-01" class="food-img" id="food-img">
+                </div>
+    
+                    <h2 class="food-title">Rose-Ice</h2>
+                    <span class="food-price">Rs.299</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+          <!--6-->
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_9HY4at2vc" alt="cake-01" class="food-img" id="food-img">
+                </div>
+        
+                    <h2 class="food-title">Chocolate</h2>
+                    <span class="food-price">Rs.215</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+
+            </div>
+             <!--7-->
+            <div class="food-box" data-item="pizza"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_-XCrph93A" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">VeggiePizza</h2>
+                    <span class="food-price">Rs.175</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+             <!--8-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_gex4hN8-G" alt="cake-01" class="food-img" id="food-img">
+                </div>
+            
+                    <h2 class="food-title">GrapeCake</h2>
+                    <span class="food-price">Rs.319</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+            <!--9-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_NuQrOsBbC" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">Cakes</h2>
+                    <span class="food-price">Rs.130</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+            
+            </div>
+
+            <!--10-->
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_X3gADPp_5" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">StaraberyIce</h2>
+                    <span class="food-price">Rs.119</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+        
+            </div>
+           <!--11-->
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_I6h8Bajqx" alt="cake-01" class="food-img" id="food-img">
+               </div>
+                
+                    <h2 class="food-title">All.ICE</h2>
+                    <span class="food-price">Rs.499</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+            <!--12-->
+            <div class="food-box" data-item="pizza"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_yw7zZFPnd" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">MeatPizza</h2>
+                    <span class="food-price">Rs.200</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+            <!--13-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_0Hj32YrlW" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">B'DayCake</h2>
+                    <span class="food-price">Rs.599</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+           <!--14-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_xO2tuZIlR" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                   <h2 class="food-title">RoseyCake</h2>
+                    <span class="food-price">Rs.355</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+            <!--15-->
+            <div class="food-box" data-item="pizza">
+                <div class="pic">
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_E4TNvvHHQ" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">SpicyPizza</h2>
+                    <span class="food-price">Rs.419</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+           <!--16-->
+            <div class="food-box" data-item="icecream"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_iu88t74bo" alt="cake-01" class="food-img" id="food-img">
+                </div>
+        
+                    <h2 class="food-title">FFIce</h2>
+                    <span class="food-price">Rs.150</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+                
+            </div>
+           <!--17-->
+            <div class="food-box" data-item="pizza"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_8AmCiH-Zm" alt="cake-01" class="food-img" id="food-img">
+                </div>
+            
+                    <h2 class="food-title">EggPizza</h2>
+                    <span class="food-price">Rs.250</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+            
+            </div>
+           <!--18-->
+            <div class="food-box" data-item="pizza"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_V_q4Y3oKq" alt="cake-01" class="food-img" id="food-img">
+                </div>
+                
+                    <h2 class="food-title">TomatoPizza</h2>
+                    <span class="food-price">Rs.449</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+
+            </div>
+             <!--19-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic">
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_Z28AhnSjk" alt="cake-01" class="food-img" id="food-img"> 
+                </div>
+    
+                    <h2 class="food-title">FlowerCake</h2>
+                    <span class="food-price">Rs.439</span>
+                    <ion-icon name="cart-sharp" class="add-cart"></ion-icon>
+            
+            </div>
+            <!--20-->
+            <div class="food-box" data-item="cake"> 
+                <div class="pic" >
+                    <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_4IRae6z3U" alt="cake-01" class="food-img" id="food-img">
+                </div>
+            
+                    <h2 class="food-title">ChocolateCake</h2>
+                    <span class="food-price">Rs.510</span>
+                    <ion-icon name="cart-sharp" class="add-cart"  ion-icon>
+            </div>
+        </div>
+    </div>
+    <!--
+        <div class="cart-box">
+                  <img src="https://ik.imagekit.io/d3kzbpbila/thejashari_4z6XoXcBO" class="cart-img" alt="food-img" id="cart-img">
+                   <div class="detail-box">
+                      <div class="cart-food-title">Vennila-Ice</div>
+                       <div class="price-box">
+                         <div class="cart-price">145</div>
+                         <div class="cart-amt">145</div>
+                       </div>
+                    <input type="number" value="1" class="cart-quantity">
+                 </div>
+                 <ion-icon name="trash" class="cart-remove"></ion-icon>
+            </div>
+        </div>
+        Made with ❤️ by 
+    -->
+    <h3 class="text">Made with❤️by Prasanna</h3>
+    <script src="food.js"></script>
+</body>
+</html>
